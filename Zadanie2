@@ -1,0 +1,139 @@
+diff --git a/src/test/java/TP/zadanie2/AppTest.java b/src/test/java/TP/zadanie2/AppTest.java
+new file mode 100644
+index 0000000..0fb5174
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/AppTest.java
+@@ -0,0 +1,38 @@
++package TP.zadanie2;
++
++import junit.framework.Test;
++import junit.framework.TestCase;
++import junit.framework.TestSuite;
++
++/**
++ * Unit test for simple App.
++ */
++public class AppTest 
++    extends TestCase
++{
++    /**
++     * Create the test case
++     *
++     * @param testName name of the test case
++     */
++    public AppTest( String testName )
++    {
++        super( testName );
++    }
++
++    /**
++     * @return the suite of tests being tested
++     */
++    public static Test suite()
++    {
++        return new TestSuite( AppTest.class );
++    }
++
++    /**
++     * Rigourous Test :-)
++     */
++    public void testApp()
++    {
++        assertTrue( true );
++    }
++}
+diff --git a/src/test/java/TP/zadanie2/Book.java b/src/test/java/TP/zadanie2/Book.java
+new file mode 100644
+index 0000000..8c1e548
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/Book.java
+@@ -0,0 +1,12 @@
++package TP.zadanie2;
++
++public class Book {
++	
++	String bookId;
++	String title;
++	String author;
++	int coutnOfRents = 0;
++	
++	
++
++}	
+\ No newline at end of file
+diff --git a/src/test/java/TP/zadanie2/Iman.java b/src/test/java/TP/zadanie2/Iman.java
+new file mode 100644
+index 0000000..824b974
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/Iman.java
+@@ -0,0 +1,12 @@
++package TP.zadanie2;
++
++
++public interface Iman {
++
++	void rent(String userId,String bookId, String date );
++	void renurn(String userId,String bookId, String date );
++	void addBook(String title,String author,String bookid, String date );
++	void removeBook(String bookid,String date, String text);
++	
++}
++
+diff --git a/src/test/java/TP/zadanie2/Isorts.java b/src/test/java/TP/zadanie2/Isorts.java
+new file mode 100644
+index 0000000..f03d6af
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/Isorts.java
+@@ -0,0 +1,5 @@
++package TP.zadanie2;
++
++public interface Isorts {
++		
++}
+diff --git a/src/test/java/TP/zadanie2/Library.java b/src/test/java/TP/zadanie2/Library.java
+new file mode 100644
+index 0000000..146a8bf
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/Library.java
+@@ -0,0 +1,30 @@
++package TP.zadanie2;
++
++public class Library  implements Iman 	 {
++
++	
++	public void rent(String userId, String bookId, String date) {
++		// TODO Auto-generated method stub
++		
++		
++	}
++
++	public void renurn(String userId, String bookId, String date) {
++		// TODO Auto-generated method stub
++		
++	}
++
++	public void addBook(String title, String author, String bookid, String date) {
++		// TODO Auto-generated method stub
++		
++	}
++
++	public void removeBook(String bookid, String date, String text) {
++		// TODO Auto-generated method stub
++		
++	}
++	
++	
++	
++
++}
+diff --git a/src/test/java/TP/zadanie2/Users.java b/src/test/java/TP/zadanie2/Users.java
+new file mode 100644
+index 0000000..e08aff3
+--- /dev/null
++++ b/src/test/java/TP/zadanie2/Users.java
+@@ -0,0 +1,5 @@
++package TP.zadanie2;
++
++public class Users {
++
++}
