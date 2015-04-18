@@ -18,10 +18,16 @@ public class Book  {
 				
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + ", data=" + data
+				+ ", coutnOfRents=" + coutnOfRents + "]";
+	}
 	
 	
 	
-	public void count
+	
 	//test8
 
 }	

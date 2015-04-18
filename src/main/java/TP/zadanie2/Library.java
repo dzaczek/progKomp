@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Library  implements Iman 	 {
 
-	HashMap newmap=new HashMap<int,Books>();
+//	HashMap newmap=new HashMap<int,Books>();
 	public void rent(String userId, String bookId, String date) {
 		// TODO Auto-generated method stub
 		

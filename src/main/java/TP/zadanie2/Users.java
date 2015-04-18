@@ -1,5 +1,43 @@
 package TP.zadanie2;
 
-public class Users {
+import java.util.Arrays;
 
+public class Users {
+	
+	int id;
+	String firsName;
+	String lastName;
+	
+	
+	String dateIncomming;
+	String dateLastRentBook;
+    int[] booksrents;
+    
+    
+    
+    
+	public Users(int id, String firsName, String lastName, String dateIncomming, String dateLastRentBook,
+			int[] booksrents) {
+		super();
+		this.id = id;
+		this.firsName = firsName;
+		this.lastName = lastName;
+		this.dateIncomming = dateIncomming;
+		this.dateLastRentBook = dateLastRentBook;
+		this.booksrents = booksrents;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Users [id=" + id + ", firsName=" + firsName + ", lastName=" + lastName + ", dateIncomming="
+				+ dateIncomming + ", dateLastRentBook=" + dateLastRentBook + ", booksrents="
+				+ Arrays.toString(booksrents) + "]";
+	}
+	
+    
+    
+    
 }
