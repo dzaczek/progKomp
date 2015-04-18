@@ -28,7 +28,12 @@ public class Users {
 	}
 
 
-
+	public int[] bookrents() {
+	return this.booksrents;
+	}
+	public String bookrentstring() {
+		return Arrays.toString(this.booksrents);
+	}
 
 	@Override
 	public String toString() {
