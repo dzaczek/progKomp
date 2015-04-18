@@ -7,6 +7,6 @@ public class Book {
 	String author;
 	int coutnOfRents = 0;
 	
-	
+	//test8
 
 }	
