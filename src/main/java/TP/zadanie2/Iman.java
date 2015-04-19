@@ -12,6 +12,8 @@ public interface Iman {
 	void addStudent(String imie, String nazwisko, int nrAlbumu);
 	void removeStudent(int nrAlbumu);
 	void printallstudents();
+	void sorttStudents();
+	String findindexnummber();
 	
 	
 }

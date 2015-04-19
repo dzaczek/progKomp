@@ -2,6 +2,7 @@ package TP.zadanie2;
 
 //import java.awt.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.HashMap;
 
@@ -101,7 +102,22 @@ public class Library  implements Iman 	 {
 	  	}
 		
 	}
+
+	public void sorttStudents() {
+		// TODO Auto-generated method stub
+		
+	//  Arrays.sort(studenci);
+		// wyświetlamy zawartość posortowanej tablicy
+		  for (Student st: studenci){
+		   System.out.println(st);
+		  }
+	}
+
+	public String findindexnummber() {
+		// TODO Auto-generated method stub
+		return null;
+	}
   	
-	
+}
 	
 

@@ -43,7 +43,7 @@ public class App
     	  libMan.addStudent("Adam", "Mruczek", 3856);
     	  libMan.addStudent("Marek", "Zielony", 4287);
     	
-    	  
+    	  libMan.sorttStudents();
     	  
     	  
     	
