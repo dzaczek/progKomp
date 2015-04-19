@@ -2,13 +2,13 @@ package TP.zadanie2;
 
 public class Book  {
 	
-	String bookId;
+	int bookId;
 	String title;
 	String author;
 	String data;
 	int coutnOfRents = 0;
 	
-	public Book(String bookId, String title, String author, String data){
+	public Book(int bookId, String title, String author, String data){
 	
 		this.bookId=bookId;
 		this.title=title;
