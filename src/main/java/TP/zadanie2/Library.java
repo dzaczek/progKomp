@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 public class Library  implements Iman 	 {
 	private static List<Book> shelve=new ArrayList<Book>();
+	private static List<Users> catalogIfUsers=new ArrayList<Users>();
+	private static List<RentCatalog> rentCatalog=new ArrayList<RentCatalog>();
 	
 
 
@@ -17,6 +19,7 @@ public class Library  implements Iman 	 {
 
 	public void rent(String userId, int bookId, String date) {
 		// TODO Auto-generated method stub
+		rentCatalog.add(new RentCatalog(bookID, userID, datarRent))
 		
 	}
 
