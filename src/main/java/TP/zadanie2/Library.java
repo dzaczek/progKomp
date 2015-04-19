@@ -37,10 +37,19 @@ public class Library  implements Iman 	 {
 		// TODO Auto-generated method stub
 		
 	}
+	
 
 
 	public void returnBook(int userId, int bookId, String date) {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public void printAllUsers() {
+		for (int i=0;i<catalogIfUsers.size();i++);
+		{
+			
+		}
 		
 	}
 
@@ -55,6 +64,18 @@ public class Library  implements Iman 	 {
       	}
       	
     }
+
+	public void addUser(int id, String firsName, String lastName, String dateIncomming) {
+		// TODO Auto-generated method stub
+		catalogIfUsers.add(new Users(id, firsName, lastName, dateIncomming));
+		
+	}
+
+
+	public void removeuser(int id) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	
