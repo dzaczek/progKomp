@@ -16,15 +16,14 @@ public class Users {
     
     
     
-	public Users(int id, String firsName, String lastName, String dateIncomming, String dateLastRentBook,
-			int[] booksrents) {
+	public Users(int id, String firsName, String lastName, String dateIncomming) {
 		super();
 		this.id = id;
 		this.firsName = firsName;
 		this.lastName = lastName;
 		this.dateIncomming = dateIncomming;
-		this.dateLastRentBook = dateLastRentBook;
-		this.booksrents = booksrents;
+		//this.dateLastRentBook = dateLastRentBook;
+
 	}
 
 

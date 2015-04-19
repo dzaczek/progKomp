@@ -9,7 +9,7 @@ public class Library  implements Iman 	 {
 	private static List<Book> shelve=new ArrayList<Book>();
 	private static List<Users> catalogIfUsers=new ArrayList<Users>();
 	private static List<RentCatalog> rentCatalog=new ArrayList<RentCatalog>();
-	
+	private static List<Student>     studenci=new ArrayList<Student>();
 
 
 	public void addBook(int bookId, String title, String author, String date) {
@@ -76,8 +76,32 @@ public class Library  implements Iman 	 {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void addStudent(String imie, String nazwisko, int nrAlbumu) {
+		// TODO Auto-generated method stub
+		studenci.add(new Student(imie, nazwisko, nrAlbumu));
+		
+	}
+
+	public void removeStudent(int nrAlbumu) {
+		// TODO Auto-generated method stub
+         // get nummer albumu and remove 
+		
+	}
 	
+
+	
+	 
+	
+	public void printallstudents() {
+		// TODO Auto-generated method stub
+		for (int i=0;i<studenci.size();i++)
+	  	{
+	  		System.out.println(shelve.get(i).toString() );	
+	  	}
+		
+	}
+  	
 	
 	
 
-}
