@@ -14,19 +14,15 @@ public class Library  implements Iman 	 {
 
 	public void addBook(int bookId, String title, String author, String date) {
 		// TODO Auto-generated method stub
-		shelve.add(bookId,new Book(bookId, title, author, date));
+		shelve.add(new Book(bookId, title, author, date));
 	}
 
-	public void rent(String userId, int bookId, String date) {
+	public void rent(int userId, int bookId, String date) {
 		// TODO Auto-generated method stub
-		rentCatalog.add(new RentCatalog(bookID, userID, datarRent))
+		rentCatalog.add(bookId,new RentCatalog(bookId, userId, date));
 		
 	}
 
-	public void renurn(String userId, int bookId, String date) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	public void removeBook(int bookid, String date, String text) {
 		
@@ -36,6 +32,29 @@ public class Library  implements Iman 	 {
 		
 		
 	}
+
+	public void rent(String userId, int bookId, String date) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void returnBook(int userId, int bookId, String date) {
+		// TODO Auto-generated method stub
+		
+	}
+
+    public void printAllBooks()
+    {
+    	//shelve.toArray();
+    	
+      	//System.out.println(shelve.get(0).toString() );
+      	for (int i=0;i<shelve.size();i++)
+      	{
+      		System.out.println(shelve.get(i).toString() );	
+      	}
+      	
+    }
 	
 	
 	
